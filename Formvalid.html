@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>คำร้องขอโอนย้ายสาขาวิชาต่างคณะ - มหาวิทยาลัยแม่โจ้</title>
+  <style>
+    body {
+      font-family: "Sarabun", sans-serif;
+      background-color: #f4f6f8;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+    section {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .inline-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 24px;
+      margin-top: 10px;
+    }
+    .inline-group label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+    .group-title {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    .inline-group input[type="radio"] {
+      margin-right: 6px;
+      transform: scale(0.9);
+    }
+    .note {
+      font-size: 0.85em;
+      background-color: #f9f9ff;
+      border: 1px solid #ccc;
+      padding: 10px 14px;
+      border-radius: 6px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .note h3 {
+      margin-top: 0;
+      font-size: 1em;
+      color: #2c3e50;
+    }
+    .note ul {
+      margin: 4px 0 4px 20px;
+      padding: 0;
+    }
+    .note strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #2c3e50;
+    }
+    .note u {
+      text-decoration: underline;
+    }
+    .form-actions {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .form-actions button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .form-actions button:hover {
+      background-color: #2980b9;
+    }
+    @media print {
+    .no-print {
+        display: none;
+    }
+    }
+  </style>
+</head>
+<body>
+  <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 30px;">
+    <img src="https://upload.wikimedia.org/wikipedia/th/thumb/b/b7/MJU_LOGO.svg/1200px-MJU_LOGO.svg.png" alt="MJU Logo" style="height: 70px; margin-right: 20px;">
+    <h1 style="margin: 0;">คำร้องขอโอนย้ายสาขาวิชาต่างคณะ</h1>
+  </div>
+
+  <form onsubmit="return confirm('คุณต้องการส่งคำร้องใช่หรือไม่?')">
+    <section>
+      <h2>ข้อมูลผู้ยื่นคำร้อง</h2>
+
+      <label>คำนำหน้า</label>
+      <select name="prefix">
+        <option value="">-- กรุณาเลือก --</option>
+        <option value="นาย">นาย</option>
+        <option value="นาง">นาง</option>
+        <option value="นางสาว">นางสาว</option>
+      </select>
+
+      <label>ชื่อ - นามสกุล</label>
+      <input type="text" name="fullname" placeholder="กรอกชื่อและนามสกุล">
+
+      <label>รหัสนักศึกษา</label>
+      <input type="text" name="student_id" placeholder="กรอกรหัสนักศึกษา">
+
+      <label>เบอร์โทรศัพท์</label>
+      <input type="text" name="phone" placeholder="กรอกเบอร์โทรศัพท์">
+
+      <label>วันที่ยื่นคำร้อง</label>
+      <input type="date" name="submission_date">
+
+      <div class="inline-group">
+        <span class="group-title">ระบบการเรียน:</span>
+        <label><input type="radio" name="program_type" value="4-5 ปี"> หลักสูตร 4–5 ปี</label>
+        <label><input type="radio" name="program_type" value="เทียบเข้าเรียน"> 4 ปีเทียบเข้าเรียน (2 ปี)</label>
+      </div>
+
+      <div class="inline-group">
+        <span class="group-title">ประเภทภาคการศึกษา:</span>
+        <label><input type="radio" name="semester_type" value="ภาคปกติ"> ภาคปกติ</label>
+        <label><input type="radio" name="semester_type" value="ภาคสมทบ"> ภาคสมทบ</label>
+      </div>
+     </section>
+
+      <p><strong>คุณสมบัติของผู้ขอย้ายสาขาวิชา:</strong></p>
+      <ul>
+        <li><u>หลักสูตร 4 เทียบเข้าเรียน (2 ปี)</u>
+          <ul>
+            <li>ศึกษาตามแผนการศึกษาในสาขาวิชาเดิมมาแล้วไม่น้อยกว่า 1 ภาคการศึกษาปกติ</li>
+            <li>มีหน่วยกิตสะสมไม่น้อยกว่า 18 หน่วยกิต</li>
+            <li>มีแต้มระดับคะแนนเฉลี่ยสะสมไม่น้อยกว่า 2.00</li>
+          </ul>
+        </li>
+        <li><u>หลักสูตร 4 ปี</u>
+          <ul>
+            <li>ศึกษาตามแผนการศึกษาในสาขาวิชาเดิมมาแล้วไม่น้อยกว่า 2 ภาคการศึกษาปกติ</li>
+            <li>มีหน่วยกิตสะสมไม่น้อยกว่า 30 หน่วยกิต</li>
+            <li>มีแต้มระดับคะแนนเฉลี่ยสะสมไม่น้อยกว่า 2.00</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+   <p style="text-align: right; margin-top: 20px;">
+  <span style="display: inline-block; margin-right: 50px;">ขอแสดงความนับถือ</span><br><br>
+  (......................................................)<br>
+  <span style="display: inline-block; margin-right: 90px;">นักศึกษา</span>
+</p>
+
+
+
+<!-- (1) ความเห็นอาจารย์ที่ปรึกษา -->
+<section>
+  <h2>(1) ความเห็นอาจารย์ที่ปรึกษา</h2>
+  <textarea rows="4" name="advisor_comment" placeholder=""></textarea>
+  <p style="text-align: right;">
+    (......................................................)<br>
+    อาจารย์ที่ปรึกษา<br>
+    วันที่....../....../25...
+  </p>
+</section>
+
+<!-- (2) ความเห็นประธานกรรมการบริหารหลักสูตร -->
+<section>
+  <h2>(2) ความเห็นประธานกรรมการบริหารหลักสูตร</h2>
+  <textarea rows="4" name="program_chair_comment" placeholder=""></textarea>
+  <p style="text-align: right;">
+    (......................................................)<br>
+    ประธานกรรมการบริหารหลักสูตร<br>
+    วันที่....../....../25...
+  </p>
+</section>
+
+<!-- (3) ความเห็นคณบดีคณะเดิม -->
+<section>
+  <h2>(3) ความเห็นคณบดีคณะ</h2>
+  <textarea rows="4" name="old_dean_comment" placeholder=""></textarea>
+  <div class="inline-group">
+    <label><input type="checkbox" name="old_dean_approval_approve" value="approve"> เห็นชอบ</label>
+    <label><input type="checkbox" name="old_dean_approval_disapprove" value="disapprove"> ไม่เห็นชอบ</label>
+  </div>
+  <p style="text-align: right;">
+    (......................................................)<br>
+    คณบดีคณะ......................................................<br>
+    วันที่....../....../25...
+  </p>
+</section>
+
+<!-- (4) ความเห็นประธานกรรมการบริหารหลักสูตร -->
+<section>
+  <h2>(4) ความเห็นประธานกรรมการบริหารหลักสูตร</h2>
+  <textarea rows="4" name="program_chair_comment" placeholder=""></textarea>
+  <p style="text-align: right;">
+    (......................................................)<br>
+    ประธานกรรมการบริหารหลักสูตร<br>
+    วันที่....../....../25...
+  </p>
+</section>
+
+<!-- (5) ความเห็นคณบดีคณะใหม่ -->
+<section>
+  <h2>(5) ความเห็นคณบดีคณะใหม่</h2>
+  <textarea rows="4" name="new_dean_comment" placeholder=""></textarea>
+  <div class="inline-group">
+    <label><input type="checkbox" name="new_dean_approval" value="approve"> อนุมัติ</label>
+    <label><input type="checkbox" name="new_dean_approval" value="disapprove"> ไม่อนุมัติ</label>
+  </div>
+  <p style="text-align: right;">
+    (......................................................)<br>
+    คณบดีคณะ......................................................<br>
+    วันที่....../....../25...
+  </p>
+</section>
+
+<!-- (6) งานเงินรายได้ กองคลัง -->
+<section>
+  <h2>(6) งานเงินรายได้ กองคลัง ชั้น 1 สํานักงานอธิการบดี</h2>
+  <p>ได้รับชำระเงินจำนวน <strong>500 บาท</strong> เป็นที่เรียบร้อยแล้ว<br>
+     ใบเสร็จรับเงินเล่มที่ <input type="text" name="receipt_book" style="width: 200px;"> เลขที่ <input type="text" name="receipt_number" style="width: 200px;"></p>
+  <p style="text-align: right;">
+    (......................................................)<br>
+    ผู้รับเงิน นักวิชาการเงินและบัญชี<br>
+    วันที่....../....../25...
+  </p>
+</section>
+
+<!-- (7) ความเห็นผู้อำนวยการสำนักบริหารและพัฒนาวิชาการ -->
+<section>
+  <h2>(7) ความเห็นผู้อำนวยการสำนักบริหารและพัฒนาวิชาการ</h2>
+  <textarea rows="4" name="academic_director_comment" placeholder=""></textarea>
+  <p style="text-align: right;">
+    (......................................................)<br>
+    ผู้อำนวยการสำนักบริหารและพัฒนาวิชาการ<br>
+    วันที่....../....../25...
+  </p>
+</section>
+
+<!-- (8) ความเห็นหัวหน้ากลุ่มภารกิจทะเบียนเรียนฯ -->
+<section>
+  <h2>(8) ความเห็นหัวหน้ากลุ่มภารกิจทะเบียนเรียนฯ</h2>
+  <textarea rows="4" name="registrar_comment" placeholder=""></textarea>
+  <p style="text-align: right;">
+    (......................................................)<br>
+    หัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ<br>
+    วันที่....../....../25...
+  </p>
+</section>
+
+<!-- (9) สำหรับเจ้าหน้าที่ดำเนินการ -->
+<section>
+  <h2>(9) สำหรับเจ้าหน้าที่ดำเนินการ</h2>
+  <p>ดำเนินการย้ายสาขาวิชาเป็นที่เรียบร้อยแล้ว<br>
+     รหัสนักศึกษาใหม่คือ <input type="text" name="new_student_id" style="width: 300px;"></p>
+  <p style="text-align: right;">
+    (......................................................)<br>
+    ตำแหน่ง นักวิชาการศึกษา<br>
+    วันที่....../....../25...
+  </p>
+</section>
+
+<!-- หมายเหตุท้ายฟอร์ม -->
+<section class="note">
+  <h3><b>หมายเหตุ</b></h3>
+  <ul>
+    <li>การโอนย้ายสาขาวิชาทั้งภายในคณะและต่างคณะ สามารถดำเนินการได้เพียงครั้งเดียวเท่านั้น</li>
+    <li>การยื่นคำร้องขอโอนย้ายสาขาวิชาที่ได้รับอนุมัติแล้ว ต้องยื่นต่อกลุ่มภารกิจทะเบียนเรียน ประมวลผล และรับเข้า สำนักบริหารและพัฒนาวิชาการ <b>ก่อนเปิดภาคเรียนปกติที่ขอโอนย้าย<u>ไม่น้อยกว่า 4 สัปดาห์</u></b></li>
+    <li>นักศึกษาที่ขอโอนย้ายสาขาวิชาต่างคณะ ต้องมีระยะเวลาศึกษาในสาขาวิชาที่โอนย้ายเข้า ก่อนจบการศึกษาและมีสิทธิ์ขอรับปริญญา ตามเงื่อนไขดังนี้:
+      <ul>
+        <li><u><b>หลักสูตร 4 ปีเทียบเข้าเรียน (2 ปี)</b></u>: ต้องศึกษาในสาขาวิชาที่โอนย้ายเข้า<u><b>ไม่น้อยกว่า 2 ภาคการศึกษาปกติ</b></u></li>
+        <li><u><b>หลักสูตร 4 ปี</b></u>: ต้องศึกษาในสาขาวิชาที่โอนย้ายเข้า<u><b>ไม่น้อยกว่า 4 ภาคการศึกษาปกติ</b></u></li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<div class="form-actions no-print">
+  <button type="button" onclick="window.print()">พิมพ์แบบฟอร์ม</button>
+</div>
